@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>A Compliment</title>
+</head>
+<body>
+    <div>Hi {{ person }}! I think you're {% block compliments %} COMPLIMENTS GO HERE {% endblock %}!</div>
+    <div>
+        <form action="/game"> 
+          <p>Would you like to play a game?</p>
+          <input type="radio" name="play-game" value="Yes" id="game-yes">
+          <label for="game-yes">Yes</label>
+          <input type="radio" name="play-game" value="No" id="game-no">
+          <label for="game-no">No</label>
+          <button type="submit">Submit</button> 
+        </form>
+</body>
+</html>
